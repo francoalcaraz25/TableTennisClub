@@ -126,7 +126,7 @@ nav a:hover {
         "hero-subtitle hero-img"
         "hero-cta hero-img";
 
-    background-image: linear-gradient(90deg, var(--color-blue-dark) 40%, transparent), url("/images/table-tennis-background.png");
+    background-image: linear-gradient(90deg, var(--color-blue-dark) 40%, transparent), url("images/table-tennis-background.png");
     background-position: right;
     background-repeat: no-repeat;
 }
