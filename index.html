@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Table Tennis Club</title>
+    <link rel="shortcut icon" href="/images/Table-Tennis.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <!--Google Icons Library-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+
+    <!--Header---------------------------------------------->
+    <header>
+        <a href="#"><img class="logo" src="/images/tabletennislogo.png" alt="Tanchi Table Tennis Club"></a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#information">Information</a></li>
+                <li>
+                    <button class="cta-contact" onclick="location.href='#contact'">Start Today
+                        <i class="material-icons">search</i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Hero------------------------------------------------>
+    <main>
+        <span class="divider top-hero bg"></span>
+        <span class="divider top green"></span>
+
+        <div class="section-hero">
+            <h1 class="slogan">Discover your inner <span>Champion</span></h1>
+            <h3 class="sub-slogan">Become part of one of the most complete sports in the world.</h3>
+            <button class="cta-main" onclick="location.href='#about'">Explore</button>
+            <img src="/images/table-tennis-player.png" alt="Table Tennis Player">
+        </div>
+
+        <span class="divider bottom green"></span>
+        <span class="divider bottom bg"></span>
+    </main>
+
+    <!--About----------------------------------------------->
+    <section class="about">
+        <span class="divider top bg reverse"></span>
+
+        <div class="section-about div-section" id="about">
+            <div class="about-text">
+                <h3>We never stop improving ourselves.</h3>
+                <p>Founded by Obera Slam 2020 Champion <span>Fernando "Tanchi" Cemborain</span>,
+                our club always strive to get the best from each player. Focusing on their strengths above all.</p>
+                <p>Meet our team of world renown Coaches</p>
+            </div>
+            <div class="about-coaches">
+                <h2>Our Coaches</h2>
+                <div class="cards">
+                    <div class="coach-card">
+                        <img src="/images/coach1.png" alt="coach Alexandre Gomez">
+                        <h3>Alexandre Gomez</h3>
+                        <p>Champion of Peru Slam 1992 and 1996. Over 20 years coaching professional players.</p>
+                    </div>
+                    <div class="coach-card">
+                        <img src="/images/coach2.png" alt="coach Jörg Bitzigeio">
+                        <h3>Jörg Bitzigeio</h3>
+                        <p>Champion of USA Slam 2018. He has a great eye for unpolished talents.</p>
+                    </div>
+                    <div class="coach-card">
+                        <img src="/images/coach3.png" alt="coach Maggie Tian">
+                        <h3>Maggie Tian</h3>
+                        <p>World Champion 2004. She has a passion on helping players of all ages.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <span class="divider bottom bg reverse"></span>
+    </section>
+
+    <!--Gallery------------------------------------------>
+
+    <section class="gallery">
+        <span class="divider top bg"></span>
+
+        <div class="section-gallery div-section" id="gallery">
+            <h2>Gallery</h2>
+            <div class="displayer">
+                <div class="displayer-wrapper">
+                    <button class="displayer-button left">
+                        <i class="material-icons">arrow_back_ios_new</i>
+                    </button>
+                    <button class="displayer-button right">
+                        <i class="material-icons">arrow_forward_ios</i>
+                    </button>
+
+                    <div class="displayer-image">
+                        <img id="img1" src="/images/gallery1.jpg" alt="">
+                        <img id="img2" src="/images/gallery2.jpeg" alt="">
+                        <img id="img3" src="/images/gallery3.jpg" alt="">
+                        <img id="img4" src="/images/gallery4.png" alt="">
+                        <img id="img5"src="/images/gallery5.jpg" alt="">
+                        <img id="img6"src="/images/gallery6.jpeg" alt="">
+                        <img id="img7"src="/images/gallery7.jpg" alt="">
+                    </div>
+                </div>
+                <div class="displayer-gallery">
+                    <img id="gal1" class="selected" src="/images/gallery1.jpg" alt="">
+                    <img id="gal2" src="/images/gallery2.jpeg" alt="">
+                    <img id="gal3" src="/images/gallery3.jpg" alt="">
+                    <img id="gal4" src="/images/gallery4.png" alt="">
+                    <img id="gal5"src="/images/gallery5.jpg" alt="">
+                    <img id="gal6"src="/images/gallery6.jpeg" alt="">
+                    <img id="gal7"src="/images/gallery7.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <span class="divider bottom bg"></span>
+    </section>
+
+    <!--Information-------------------------------------->
+    <section class="information">
+        <span class="divider top bg reverse"></span>
+
+        <div class="section-information div-section" id="information">
+            <h2>Classes</h2>
+            <div class="googlemapslocation">
+                <h3>You can find us here!</h3>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3543.4019783425983!2d-55.89545758537982!3d-27.363158782935734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457be3302410285%3A0x3136b45d3f3ba1ff!2sClub%20Tokio!5e0!3m2!1sen!2sau!4v1662629785399!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="times">
+                <div class="pingpong-classes">
+                    <h3>General Training</h3>
+                    <div class="pingpong-class">
+                        <h4>Morning</h4>
+                        <h5>8am - 10am</h5>
+                        <p>Professor Jörg Bitzigeio</p>
+                    </div>
+                    <div class="pingpong-class">
+                        <h4>Afternoon</h4>
+                        <h5>2pm - 4pm</h5>
+                        <p>Professor Maggie Tian</p>
+                    </div>
+                    <div class="pingpong-class">
+                        <h4>Evening</h4>
+                        <h5>6pm - 8pm</h5>
+                        <p>Professor Jörg Bitzigeio</p>
+                    </div>
+                </div>
+                <div class="pingpong-classes">
+                    <h3>Professional Training</h3>
+                    <div class="pingpong-class">
+                        <h4>Morning</h4>
+                        <h5>5am - 9am</h5>
+                        <p>Professor Alexandre Gomez</p>
+                    </div>
+                    <div class="pingpong-class">
+                        <h4>Afternoon</h4>
+                        <h5>1pm - 5pm</h5>
+                        <p>Professor Alexandre Gomez</p>
+                    </div>
+                    <div class="pingpong-class">
+                        <h4>Evening</h4>
+                        <h5>7pm - 10pm</h5>
+                        <p>Professor Maggie Tian</p>
+                    </div>
+                </div>
+            </div>
+            <div class="info-location">
+                <i class="material-icons">location_on</i>
+                <h4>Belgrano 256, Posadas 3300</h4>
+            </div>
+            <div class="info-phone">
+                <i class="material-icons">call</i>
+                <h4>+54 3764 124523</h4>
+            </div>
+        </div>
+
+        <span class="divider bottom bg reverse"></span>
+    </section>
+
+    <!--Contact------------------------------------------>
+    <section class="contact">
+        <span class="divider top bg"></span>
+
+        <div class="section-contact div-section" id="contact">
+            <h2>Contact Us!</h2>
+            <form action="">
+                <h3>Leave us a message. We will contact you in a short time.</h3>
+                <fieldset>
+                    <legend>What is your message about?</legend>
+                    <input type="checkbox" name="msg-signup" id="msg-signup">
+                    <label for="msg-signup">I would like to sign up for a class.</label>
+                    <input type="checkbox" name="msg-times" id="msg-times">
+                    <label for="msg-times">I would like to request a special class time.</label>
+                    <input type="checkbox" name="msg-prices" id="msg-prices">
+                    <label for="msg-prices">I would like to know the prices of each course.</label>
+                    <input type="checkbox" name="msg-help" id="msg-help">
+                    <label for="msg-help">I would like to request help with a particular topic.</label>
+                </fieldset>
+                <div class="message-section">
+                    <label for="name" class="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="surname" class="surname">Surname</label>
+                    <input type="text" name="surname" id="surname">
+                    <label for="email" class="email">E-mail</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="message" class="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+
+        <span class="divider bottom bg"></span>
+    </section>
+
+    <!--Footer------------------------------------------>
+    <footer>
+        <div class="section-footer div-section">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com">
+                        <img src="/images/facebook-icon.png" alt="Facebook logo">
+                        <span>/TableTennisClub</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com">
+                        <img src="/images/instagram-icon.png" alt="Instagram logo">
+                        <span>@TableTennisClub</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com">
+                        <img src="/images/twitter-icon.png" alt="Twitter logo">
+                        <span>/TableTennisClub</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com">
+                        <img src="/images/youtube-icon.png" alt="Youtube logo">
+                        <span>/TableTennisCLub</span>
+                    </a>
+                </li>
+
+            </ul>
+            <h4 class="copyright">This Website is not intended for commercial use. &copy; HK25 Development 2022</h4>
+        </div>
+
+    </footer>
+
+    <!--Go Up Button-->
+    <a class="go-up hidden" href="#">
+        <i class="material-icons">arrow_upward</i>
+    </a>
+</body>
+</html>
