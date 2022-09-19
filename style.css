@@ -229,12 +229,21 @@ main h3 {
 }
 
 main img {
-    grid-area: hero-img;
+    /* grid-area: hero-img; */
 
-    position: relative;
-    right: 240px; /*bad fix*/
+    /* position: relative; */
+    /*right: 240px; /*bad fix*/
+
+    position: absolute;
+    right: 0;
 
     z-index: 1;
+}
+
+main img.invisible {
+    grid-area: hero-img;
+    position: relative;
+    visibility: hidden;
 }
 
 /*--About Section-----------------------------------*/
