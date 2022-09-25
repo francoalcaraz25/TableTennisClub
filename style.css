@@ -11,15 +11,15 @@
 }
 
 :root {
-    --color-blue-dark: rgb(9, 62, 206);
+    --color-blue-dark: rgb(61, 24, 223);
     --color-blue-light: rgb(114, 148, 250);
 
-    --color-green-dark: rgb(0, 124, 49);
+    --color-green-dark: rgb(2, 113, 86);
     --color-green-light: rgb(50, 189, 90);
 
     --color-dark: rgb(16, 16, 33);
     --color-red: rgb(212, 27, 27);
-    --color-violet: rgb(113, 80, 204);
+    --color-violet: rgb(136, 101, 232);
 }
 
 html {
@@ -115,6 +115,11 @@ nav a:hover {
 
 /*--Hero Section----------------------------------*/
 
+main {
+    position: relative;
+    overflow: hidden;
+}
+
 .section-hero {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -129,11 +134,6 @@ nav a:hover {
     background-image: linear-gradient(90deg, var(--color-blue-dark) 40%, transparent), url("images/table-tennis-background.png");
     background-position: right;
     background-repeat: no-repeat;
-}
-
-main {
-    position: relative;
-    overflow: hidden;
 }
 
 .divider {
@@ -229,11 +229,6 @@ main h3 {
 }
 
 main img {
-    /* grid-area: hero-img; */
-
-    /* position: relative; */
-    /*right: 240px; /*bad fix*/
-
     position: absolute;
     right: 0;
 
@@ -298,6 +293,7 @@ section.about, section.information {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .coach-card {
@@ -305,6 +301,11 @@ section.about, section.information {
     
     width: 300px;
     text-align: center;
+
+    transition: all 0.2s;
+}
+.coach-card:hover {
+    transform: scale(105%, 105%);
 }
 
 .coach-card img {
@@ -455,7 +456,7 @@ section.about, section.information {
 .pingpong-class:hover {
     transform: translateY(-.25rem);
     box-shadow: 0px .25rem var(--color-dark);
-    background-color: rgb(48, 48, 71);;
+    background-color: rgb(48, 48, 71);
 }
 
 .pingpong-class h4 {
@@ -557,7 +558,7 @@ input[type="text"], input[type="email"], textarea {
 
 input:focus, textarea:focus {
     border: 1px solid var(--color-green-light);
-    outline: 3px solid var(--color-green-light);
+    outline: 1px solid var(--color-green-light);
 }
 
 .name {order: 1;}
@@ -627,6 +628,7 @@ footer {
 footer ul {
     display: flex;
     column-gap: 2rem;
+    row-gap: 1rem;
 }
 
 footer li {
@@ -637,6 +639,7 @@ footer li {
 footer a {
     transition: all .2s;
     display: flex;
+    gap: 1rem;
     align-items: center;
 }
 footer a:hover {
@@ -686,4 +689,146 @@ footer h4 {
 
 .go-up i {
     font-size: 2rem;
+}
+
+/*==MEDIA BREAK POINTS====================================*/
+
+/*--Desktop Small View---------------------------*/
+@media (max-width: 1100px) {
+    header {
+        background-color: greenyellow;
+    }
+
+    .displayer {
+        grid-template-columns: 1fr 70%;
+    }
+    .displayer-gallery img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .map {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+/*--Tablet View----------------------------------*/
+@media (max-width: 870px) {
+    header {
+        background-color: red;
+    }
+
+    main {
+        padding-bottom: 21rem;
+    }
+
+    .section-hero {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        height: 500px;
+        justify-items: center;
+    }
+
+    .slogan {
+        order: 2;
+        padding: 2rem;
+        text-align: center;
+    }
+    .sub-slogan {
+        order: 3;
+    }
+    .cta-main {
+        order: 4;
+    }
+
+    main img {
+        top: -3rem;
+    }
+    main img.invisible {
+        order: 1;
+        width: 700px;
+        visibility: hidden;
+    }
+
+
+    .section-about {
+        display: block;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+    .about-text h3 {
+        font-size: 1.8rem;
+    }
+
+    .about-coaches {
+        padding: 2rem;
+    }
+    .cards {
+        gap: 1rem;
+    }
+
+
+    .displayer {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    
+        padding: 1rem;
+        background-color: var(--color-dark);
+    }
+
+    .displayer-image { order: 1;}
+    .displayer-gallery {order: 2;}
+
+
+    .section-information {
+        background-color: var(--color-blue-dark);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-information h2 {
+        padding: 2rem;
+    }
+
+    .googlemapslocation h3 {
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    .map {
+        width: 100%;
+    }
+
+    .info-location, .info-phone  {
+        margin: 1rem;
+        display: flex;
+        align-self: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    footer ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+}
+
+/*--Movile View----------------------------------*/
+@media (max-width: 600px) {
+    header {
+        background-color: wheat;
+    }
 }
