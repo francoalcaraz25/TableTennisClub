@@ -10,6 +10,36 @@ window.addEventListener("scroll", () => {
     }
 });
 
+//--Ham Menu Toggle---------------------------------------------
+
+const hamMenu = document.querySelector(".ham-menu");
+
+const hambar1 = document.querySelector(".hambar1");
+const hambar2 = document.querySelector(".hambar2");
+const hambar3 = document.querySelector(".hambar3");
+
+const menu = document.querySelector("nav ul");
+
+hamMenu.addEventListener("click", () => {
+    toggleMenu();
+});
+
+const menuItems = document.querySelectorAll("nav li");
+
+menuItems.forEach(item => {
+    item.addEventListener("click", () => {
+        toggleMenu();
+    });
+});
+
+const toggleMenu = () => {
+    hamMenu.classList.toggle("toggle-menu");
+    hambar1.classList.toggle("toggle-menu");
+    hambar2.classList.toggle("toggle-menu");
+    hambar3.classList.toggle("toggle-menu");
+    menu.classList.toggle("toggle-menu");
+}
+
 //--Image Displayer---------------------------------------------
 
 const btnBack = document.querySelector(".displayer-button.left");
