@@ -29,7 +29,9 @@ html {
 body {
     background-color: var(--color-dark);
     color: white;
+}
 
+.body-wrapper {
     overflow-x: hidden;
 }
 
