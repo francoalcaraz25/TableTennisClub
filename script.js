@@ -19,6 +19,7 @@ const hambar2 = document.querySelector(".hambar2");
 const hambar3 = document.querySelector(".hambar3");
 
 const menu = document.querySelector("nav ul");
+const nav = document.querySelector("nav");
 
 hamMenu.addEventListener("click", () => {
     toggleMenu();
@@ -38,6 +39,7 @@ const toggleMenu = () => {
     hambar2.classList.toggle("toggle-menu");
     hambar3.classList.toggle("toggle-menu");
     menu.classList.toggle("toggle-menu");
+    nav.classList.toggle("toggle-menu");
 }
 
 //--Image Displayer---------------------------------------------
@@ -94,7 +96,23 @@ const scrollDisplayer = (imageId) => { //--expects valid image id and scrolls to
     const displayerWidth = imageDisplayer.offsetWidth; //--displayer's current width (changes based on viewport size)
 
     scrollPosition = imageId * displayerWidth - displayerWidth;
-    //console.log(imageId, scrollPosition);
 
     imageDisplayer.scrollTo(scrollPosition, 0);    
 }
+
+
+//--Message Sent Alert Box------------------------------------------------------
+
+const messageForm = document.querySelector("form");
+const dialogueBox = document.querySelector(".dialogue-box");
+
+messageForm.addEventListener("submit", ev => {
+    ev.preventDefault(); //--For ignoring Submit page reload
+    dialogueBox.classList.remove("hidden"); 
+});
+
+const dialogueBtn = document.querySelector(".dialogue-box button");
+
+dialogueBtn.addEventListener("click", () => {
+    dialogueBox.classList.add("hidden");
+});
